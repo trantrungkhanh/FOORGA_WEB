@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="header-discount-item">
+       <!-- start header-discount-item -->
+            <section class="section section--no-pt section--no-pb">
+                <div class="container-fluid">
+                    <!-- start promo banners -->
+                    <div class="promo-banners">
+                        <div class="__inner">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a class="__item" href="#"><img th:src="@{static/foorga-home/img/promo-banners_img/1.jpg}" alt="demo" class="img-fluid w-100" /></a>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a class="__item" href="#"><img th:src="@{static/foorga-home/img/promo-banners_img/2.jpg}" alt="demo" class="img-fluid w-100" /></a>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a class="__item" href="#"><img th:src="@{static/foorga-home/img/promo-banners_img/3.jpg}" alt="demo" class="img-fluid w-100" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end promo banners -->
+
+                    <div class="spacer py-4 py-lg-6"></div>
+                </div>
+            </section>
+            <!-- end header-discount-item -->
+	</th:block>
+
+</body>
+
+</html>

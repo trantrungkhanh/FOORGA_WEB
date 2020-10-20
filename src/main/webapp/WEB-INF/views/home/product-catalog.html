@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head>
+		<!-- add css file -->
+    	<th:block th:include="components/foorga/layout/head :: head"></th:block>
+
+</head>
+
+<body class="woocommerce-page shop-home-page">
+
+    <div id="app">
+    
+    	<!-- header
+    	================================================== -->
+		<!-- header -->
+        <div th:replace="components/foorga/header/header :: header"></div>
+	
+		<!-- header-banner -->
+		<div th:replace="components/foorga-product-catalog/header/header-banner :: header-banner"></div>
+		
+		<!-- body 
+		==================================================-->
+		<!-- body-main -->
+		<div th:replace="components/foorga-product-catalog/body/body-main :: body-main"></div>
+		
+		
+		<!-- footer
+    	================================================== -->
+		<!-- footer -->
+        <div th:replace="components/foorga/footer/footer :: footer"></div>
+    </div>
+	
+	<!-- add js file -->
+    <th:block th:replace="components/foorga/layout/footer :: footer"></th:block>
+    
+    <!-- add script tag -->
+    <th:block th:replace="components/foorga/layout/footer-script :: footer-script"></th:block>
+
+
+</body>
+
+</html>

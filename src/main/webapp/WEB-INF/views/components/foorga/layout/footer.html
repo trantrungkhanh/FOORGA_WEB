@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="footer">
+	<div id="btn-to-top-wrap">
+        <a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+    </div>
+
+    <script type="text/javascript" th:src="@{/static/jquery-3.5.1.min.js}"></script>
+  
+	<script type="text/javascript" th:src="@{/static/foorga-home/js/device.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{/static/foorga-home/js/main.min.js}"></script>
+
+	</th:block>
+</body>
+
+</html>

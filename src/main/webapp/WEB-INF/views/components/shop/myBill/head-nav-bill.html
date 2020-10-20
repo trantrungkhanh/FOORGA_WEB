@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+	<th:block th:fragment="head-nav-bill">
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a 
+					th:classappend="${#request.getRequestURI().startsWith('/shop/mybills/waiting-payment') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+					th:href="@{/shop/mybills/waiting-payment}">Waiting Payment</a>				
+					<a 
+					th:classappend="${#request.getRequestURI().startsWith('/shop/mybills/waiting-confirm') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+					th:href="@{/shop/mybills/waiting-confirm}">Waiting Confirm</a>
+					<a 
+					th:classappend="${#request.getRequestURI().startsWith('/shop/mybills/confirm') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+					th:href="@{/shop/mybills/confirm}">Confirm List</a>
+					<a 
+					th:classappend="${#request.getRequestURI().startsWith('/shop/mybills/success') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+					th:href="@{/shop/mybills/success}">Success List</a>
+					<a 
+					th:classappend="${#request.getRequestURI().startsWith('/shop/mybills/deny') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+					th:href="@{/shop/mybills/deny}">Deny List</a> 
+					<a 
+					th:classappend="${#request.getRequestURI().startsWith('/shop/mybills/error-payment') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+					th:href="@{/shop/mybills/error-payment}">Error Payment</a> 					
+				</div>
+			</div>
+		</nav>
+
+		<script th:inline="javascript">
+        const shop = [[${ shops }]]
+        console.log([[${ shops }]])
+      </script>
+	</th:block>
+
+</body>
+
+</html>

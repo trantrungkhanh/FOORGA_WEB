@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+	<th:block th:fragment="head-nav-shop-table">
+		<div class="card card-nav-tabs card-plain ">
+			<div class="card-header card-header-cutstom-bill ">
+				<!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+				<div class="nav-tabs-navigation">
+					<div class="nav-tabs-wrapper">
+						<ul class="nav nav-tabs" data-tabs="tabs">
+							<li class="nav-item"><a 
+								th:classappend="${#request.getRequestURI().startsWith('/admin/shop/list') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+								th:href="@{/admin/shop/list}">Active List</a></li>
+							<li class="nav-item"><a 
+								th:classappend="${#request.getRequestURI().startsWith('/admin/shop/accept-list') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+								th:href="@{/admin/shop/accept-list}">Accept List</a></li>
+							<li class="nav-item"><a 
+								th:classappend="${#request.getRequestURI().startsWith('/admin/shop/deactive-list') ? 'nav-item nav-link active' : 'nav-item nav-link' }" 
+								th:href="@{/admin/shop/deactive-list}">Deactive List</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script th:inline="javascript">
+        console.log([[${ shops }]])
+      </script>
+	</th:block>
+
+</body>
+
+</html>

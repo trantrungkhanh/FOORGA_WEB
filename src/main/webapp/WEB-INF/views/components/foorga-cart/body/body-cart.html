@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="body-cart">
+	
+	
+	
+       <!-- start cart -->
+            <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <!-- start cart -->
+                            <div class="cart">
+                                <form class="cart__form" action="#">
+                                    <div class="cart__table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td width="10%">&nbsp;</td>
+                                                    <td width="35%">added products</td>
+                                                    <td width="15%">Price</td>
+                                                    <td width="20%">Quantity</td>
+                                                    <td width="15%">Total</td>
+                                                    <td width="5%">&nbsp;</td>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <figure class="__image">
+                                                            <a href="#">
+                                                                <img th:src="@{/static/foorga-home/img/goods_img/5.jpg}" alt="demo" />
+                                                            </a>
+                                                        </figure>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="__name">Big Banana</a>
+                                                    </td>
+
+                                                    <td>
+                                                        <span class="__price">2.99 $</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="quantity-counter js-quantity-counter">
+                                                            <span class="__btn __btn--minus"></span>
+                                                            <input class="__q-input" type="text" value="1" />
+                                                            <span class="__btn __btn--plus"></span>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <span class="__total">2.99 $</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <a class="__remove" href="#" aria-label="Remove this item">
+                                                            <i class="fontello-cancel"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <figure class="__image">
+                                                            <a href="#">
+                                                                <img th:src="@{/static/foorga-home/img/goods_img/8.jpg}" alt="demo" />
+                                                            </a>
+                                                        </figure>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="__name">Freash Peach</a>
+                                                    </td>
+
+                                                    <td>
+                                                        <span class="__price">2.99 $</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="quantity-counter js-quantity-counter">
+                                                            <span class="__btn __btn--minus"></span>
+                                                            <input class="__q-input" type="text" value="1" />
+                                                            <span class="__btn __btn--plus"></span>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <span class="__total">2.99 $</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <a class="__remove" href="#" aria-label="Remove this item">
+                                                            <i class="fontello-cancel"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <figure class="__image">
+                                                            <a href="#">
+                                                                <img th:src="@{/static/foorga-home/img/goods_img/2.jpg}" alt="demo" />
+                                                            </a>
+                                                        </figure>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="__name">Awesome Brocoli</a>
+                                                    </td>
+
+                                                    <td>
+                                                        <span class="__price">2.99 $</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="quantity-counter js-quantity-counter">
+                                                            <span class="__btn __btn--minus"></span>
+                                                            <input class="__q-input" type="text" value="1" />
+                                                            <span class="__btn __btn--plus"></span>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <span class="__total">2.99 $</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <a class="__remove" href="#" aria-label="Remove this item">
+                                                            <i class="fontello-cancel"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="py-5"></div>
+
+                                    <div class="row justify-content-md-between">
+                                        <div class="col-12 col-md-6">
+
+                                            <div class="cart__coupon form--horizontal">
+                                                <div class="input-wrp">
+                                                    <input class="textfield" type="text" placeholder="Coupon code" />
+                                                </div>
+
+                                                <button class="custom-btn custom-btn--medium custom-btn--style-1" type="submit" role="button">Apply Coupon</button>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="spacer py-5 d-md-none"></div>
+
+                                            <div class="cart__total">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <h3>CART <span>TOTALS</span></h3>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Proceed to checkout</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Subtotal:</td>
+                                                            <td>$96.00</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Shipping</td>
+                                                            <td>Flat rate: $3.00 <br>Shipping to Ukraine.</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Total</td>
+                                                            <td>$99.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- start cart -->
+
+                        </div>
+                    </div>
+                </div>
+            <!-- end cart -->
+	</th:block>
+
+</body>
+
+</html>

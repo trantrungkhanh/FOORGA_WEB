@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="header-banner">
+       <!-- start product-detail-header-banner -->
+            <div id="hero" class="jarallax" th:style="'background-image: url('+@{/static/foorga-home/img/intro_img/cart.jpg}+');color: #333;'">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-7">
+							<h1 class="__title"><span>Agro Shop</span> Cart</h1>
+
+							<p>
+								The point of using is that it has a more-or-less normal distribution of letters, as opposed to using Content here content here making it look
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- end	 product-detail-header-banner -->
+	</th:block>
+
+</body>
+
+</html>

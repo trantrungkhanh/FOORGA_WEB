@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="body-list-category">
+	
+			<!-- start list category -->
+            <section class="section">
+                <div class="d-none d-lg-block">
+                    <img id="bg-img-1" class="img-fluid" th:src="@{static/foorga-home/img/agro_2.png}" alt="demo" />
+                    <style type="text/css">
+                        #bg-img-1 {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                        }
+                    </style>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-4">
+                            <div class="section-heading section-heading--left">
+                                <p>
+                                    <img class="img-fluid" th:src="@{static/foorga-home/img/logo_small.png}" width="50" height="50" alt="demo" />
+                                </p>
+
+                                <h2 class="__title">Fruits & vegetables <span>Category</span></h2>
+
+                                <p><a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">More about</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-8">
+                            <!-- start feature -->
+                            <div class="feature feature--style-3">
+                                <div class="__inner">
+                                    <div class="row">
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/7.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Blueberry</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/8.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Strawberry</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/9.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Apples</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/10.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Orange</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/11.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Carrot</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/12.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Cabbage</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/13.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Potato</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+
+                                        <!-- start item -->
+                                        <div class="col-6 col-sm-4 col-lg-3">
+                                            <div class="__item  text-center">
+                                                <i class="__ico">
+														<img class="img-fluid" th:src="@{static/foorga-home/img/feature_img/14.png}" alt="demo" />
+													</i>
+
+                                                <h5 class="__title">Eggplant</h5>
+                                            </div>
+                                        </div>
+                                        <!-- end item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end feature -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end list category -->
+            
+	</th:block>
+
+</body>
+
+</html>

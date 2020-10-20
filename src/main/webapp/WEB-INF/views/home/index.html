@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head>
+		<!-- add css file -->
+    	<th:block th:include="components/foorga/layout/head :: head"></th:block>
+
+</head>
+
+<body class="woocommerce-page shop-home-page">
+
+    <div id="app">
+    
+    	<!-- header
+    	================================================== -->
+		<!-- header -->
+        <div th:replace="components/foorga/header/header :: header"></div>
+	
+		<!-- header-banner -->
+		<div th:replace="components/foorga-home/header/header-banner :: header-banner"></div>
+	
+		<!-- header-discount-item -->
+		<div th:replace="components/foorga-home/header/header-discount-item :: header-discount-item"></div>
+		
+		<!-- header-service-item -->
+		<div th:replace="components/foorga-home/header/header-service-item :: header-service-item"></div>
+		
+		<!-- body 
+		==================================================-->
+		<!-- body-hot-product -->
+		<div th:replace="components/foorga-home/body/body-hot-product :: body-hot-product"></div>
+		
+		<!-- body-img-banner -->
+		<div th:replace="components/foorga-home/body/body-shop-banner :: body-shop-banner"></div>
+		
+		<!-- body-category -->
+		<div th:replace="components/foorga-home/body/body-list-category :: body-list-category"></div>
+		
+		<!-- body-words-banner -->
+		<div th:replace="components/foorga-home/body/body-word-banner :: body-word-banner"></div>
+		
+		<!-- body-bestseller-product -->
+		<div th:replace="components/foorga-home/body/body-bestseller-product :: body-bestseller-product"></div>
+		
+		<!-- body-product-banner -->
+		<div th:replace="components/foorga-home/body/body-product-banner :: body-product-banner"></div>
+		
+		<!-- body-partner -->
+		<div th:replace="components/foorga-home/body/body-partner :: body-partner"></div>
+		
+		<!-- footer
+    	================================================== -->
+		<!-- footer -->
+        <div th:replace="components/foorga/footer/footer :: footer"></div>
+    </div>
+	
+	<!-- add js file -->
+    <th:block th:replace="components/foorga/layout/footer :: footer"></th:block>
+    
+    <!-- add script tag -->
+    <th:block th:replace="components/foorga/layout/footer-script :: footer-script"></th:block>
+
+
+</body>
+
+</html>

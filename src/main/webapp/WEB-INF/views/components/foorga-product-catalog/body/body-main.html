@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="body-main">
+       <main role="main">
+       		<!-- start product-catalog -->
+       		<section class="section">   			
+                <div class="decor-el decor-el--1">
+                    <img width="286" height="280" th:src="@{/static/foorga-home/img/decor-el_1.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--2" >
+                    <img width="99" height="88" th:src="@{/static/foorga-home/img/decor-el_2.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--3" >
+                    <img width="115" height="117" th:src="@{/static/foorga-home/img/decor-el_3.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--4">
+                    <img width="84" height="76" th:src="@{/static/foorga-home/img/decor-el_4.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--5">
+                    <img width="248" height="309" th:src="@{/static/foorga-home/img/decor-el_5.jpg}" alt="demo" />
+                </div>
+		       	<div class="container">
+			       	<div class="goods-catalog">
+			       		<div class="row">
+			       			
+			       			<!-- start-filter-product -->
+							<div th:replace="components/foorga/body/body-product-filter/body-product-filter :: body-product-filter"></div>
+			       			<!-- end-filter-product -->
+			       			
+			       			<!-- start-detail-product -->
+							<div th:replace="components/foorga-product-catalog/body/body-product-list :: body-product-list"></div>
+			       			<!-- end-detail-product -->
+			       			
+			       			<div class="col-12 my-6 d-md-none"></div>
+			       			
+			       			
+			       			
+			       		</div>
+			       	</div>
+		       	</div>
+		    </section>
+		    <!-- end product-catalog -->
+		    
+		    
+		    <!-- start-body-shop-banner (foorga-home/body) -->
+		    <div th:replace="components/foorga-home/body/body-shop-banner :: body-shop-banner"></div>
+		    <!-- end-body-shop-banner (foorga-home/body) -->
+		    
+       </main>
+	</th:block>
+
+</body>
+
+</html>

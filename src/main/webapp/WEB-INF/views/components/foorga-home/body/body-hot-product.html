@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="body-hot-product">
+	
+			<!-- start list hot product -->
+            <section class="section">
+            
+            <div class="decor-el decor-el--1">
+                    <img width="286" height="280" th:src="@{static/foorga-home/img/decor-el_1.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--2" >
+                    <img width="99" height="88" th:src="@{static/foorga-home/img/decor-el_2.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--3" >
+                    <img width="115" height="117" th:src="@{static/foorga-home/img/decor-el_3.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--4" >
+                    <img width="84" height="76" th:src="@{static/foorga-home/img/decor-el_4.jpg}" alt="demo" />
+                </div>
+
+                <div class="decor-el decor-el--5" >
+                    <img width="248" height="309" th:src="@{static/foorga-home/img/decor-el_5.jpg}" alt="demo" />
+                </div>
+            
+                <div class="container">
+                    <div class="section-heading section-heading--left" data-aos="fade">
+                        <h2 class="__title">Featured<span>Products</span></h2>
+                    </div>
+
+                    <!-- start goods -->
+                    <div class="goods goods--style-1 goods--slider">
+                        <div class="js-slick" data-slick='{
+									"autoplay": true,
+									"arrows": false,
+									"dots": true,
+									"speed": 1200,
+									"responsive": [
+									{
+										"breakpoint": 575,
+										"settings":{
+											"rows": 2,
+											"slidesToShow": 2,
+											"slidesToScroll": 2
+										}
+									},
+									{
+										"breakpoint": 767,
+										"settings":{
+											"rows": 2,
+											"slidesToShow": 3,
+											"slidesToScroll": 3
+										}
+									},
+									{
+										"breakpoint": 991,
+										"settings":{
+											"rows": 2,
+											"slidesToShow": 4,
+											"slidesToScroll": 2
+										}
+									},
+									{
+										"breakpoint": 1199,
+										"settings":{
+											"rows": 2,
+											"slidesToShow": 4,
+											"slidesToScroll": 2
+										}
+									}]
+								}'>
+								
+								
+                            <!-- start item (item >= 16) -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="188" th:src="@{/static/foorga-home/img/goods_img/1.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Oranges</a></h4>
+
+                                    <div class="__category"><a href="#">Fruits</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">3,80 $</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--sale">Sale</span>
+                            </div>
+                            <!-- end item -->
+
+                            <!-- start item -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="180" th:src="@{/static/foorga-home/img/goods_img/2.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Brocoli</a></h4>
+
+                                    <div class="__category"><a href="#">Vegetables</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">3,35 $</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--new">New</span>
+                            </div>
+                            <!-- end item -->
+
+                            <!-- start item -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="160" th:src="@{/static/foorga-home/img/goods_img/3.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Red Apple</a></h4>
+
+                                    <div class="__category"><a href="#">Fruits</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">0,99 $</span>
+                                        <span class="product-price__item product-price__item--old">2200$</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--hot">hot</span>
+                            </div>
+                            <!-- end item -->
+
+                            <!-- start item -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="190" th:src="@{/static/foorga-home/img/goods_img/4.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Strawberry</a></h4>
+
+                                    <div class="__category"><a href="#">Fruits</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">2,10 $</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--sale">Sale</span>
+                            </div>
+                            <!-- end item -->
+
+                            <!-- start item -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="180" th:src="@{/static/foorga-home/img/goods_img/5.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Fresh Banana</a></h4>
+
+                                    <div class="__category"><a href="#">Vegetables</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">10,99 $</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--new">New</span>
+                            </div>
+                            <!-- end item -->
+                            
+                            <!-- start item -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="180" th:src="@{/static/foorga-home/img/goods_img/5.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Fresh Banana</a></h4>
+
+                                    <div class="__category"><a href="#">Vegetables</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">10,99 $</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--new">New</span>
+                            </div>
+                            <!-- end item -->
+                            
+                            <!-- start item -->
+                            <div class="__item">
+                                <figure class="__image">
+                                    <img width="180" th:src="@{/static/foorga-home/img/goods_img/5.jpg}" alt="demo" />
+                                </figure>
+
+                                <div class="__content">
+                                    <h4 class="h6 __title"><a href="single_product.html">Fresh Banana</a></h4>
+
+                                    <div class="__category"><a href="#">Vegetables</a></div>
+
+                                    <div class="product-price">
+                                        <span class="product-price__item product-price__item--new">10,99 $</span>
+                                    </div>
+
+                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#"><i class="fontello-shopping-bag"></i>Add to cart</a>
+                                </div>
+
+                                <span class="product-label product-label--new">New</span>
+                            </div>
+                            <!-- end item -->
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- end goods -->
+                </div>
+            </section>
+            <!-- end list hot product -->
+	</th:block>
+
+</body>
+
+</html>

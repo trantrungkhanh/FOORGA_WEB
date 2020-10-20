@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head></head>
+
+<body>
+
+	<th:block th:fragment="body-product-banner">
+	
+			<!-- start word banner -->
+            <section class="section section--no-pt section--no-pb section--gutter">
+                <!-- start banner simple -->
+                <div class="simple-banner simple-banner--style-1">
+
+                    <div class="__label d-none d-md-block">
+                        <div class="d-table m-auto h-100">
+                            <div class="d-table-cell align-middle">
+                                <span class="num-1">1</span>
+                            </div>
+
+                            <div class="d-table-cell align-middle">
+                                <span class="num-2">50$</span>
+                                <span>Kg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="__inner">
+                                    <img class="img-fluid" th:src="@{/static/foorga-home/img/site_logo.png}" alt="demo" />
+
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7 col-xl-6">
+                                            <div class="banner__text">
+                                                <h2 class="__title h1"><b style="display: block; color: #c6c820;">Fresh Exotic Fruits</b> <span>in Our Store</span></h2>
+
+                                                <p>
+                                                    The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.
+                                                </p>
+
+                                                <p>
+                                                    <a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Buy</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end banner simple -->
+            </section>
+            <!-- end word banner -->
+            
+	</th:block>
+
+</body>
+
+</html>
